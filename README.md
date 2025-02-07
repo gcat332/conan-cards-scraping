@@ -1,4 +1,4 @@
-pullCard.py : Use for scraping card data from website
+pullCard.py : Use for scraping card data from website<br>
 convertImage.py : Use for download image from url and insert into excel workbook
 
 **This project is developed for learing on Python**
