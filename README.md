@@ -5,4 +5,3 @@
 - pandas : create dataframe and save as xlsm
 - io : for download card image
 - openpyxl : insert downloaded image into excel file
-- test
