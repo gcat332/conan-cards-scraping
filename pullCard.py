@@ -171,11 +171,10 @@ for card in cards:
                "card_id":card_id,"card_type":card_type,
                "card_rarity":card_rarity,"card_color":card_color,
                "card_group":card_group,"card_ap":card_ap,
-                 "card_lp":card_lp, "card_ability":card_ability,
-                 "card_lv":card_lv,'card_pic':''}
+               "card_lp":card_lp, "card_ability":card_ability,
+               "card_lv":card_lv,'card_pic':''}
     df = df._append(new_row, ignore_index=True)
 
 driver.quit()
 df.to_excel("conan_cards.xlsx", index=False)
 print('completed')
-
