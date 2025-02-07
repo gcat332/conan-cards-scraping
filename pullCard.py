@@ -124,7 +124,7 @@ def findCardPic(card):
     match = re.search(pattern, card)
     return "https://www.undercutgames.com"+match.group(1)
 
-df = pd.DataFrame(columns=["card_pic", "card_name","card_id","card_type", "card_lv","card_rarity","card_color","card_group","card_ap", "card_lp", "card_ability"])
+df = pd.DataFrame(columns=["card_pic", "card_pic_url", "card_name","card_id","card_type", "card_lv","card_rarity","card_color","card_group","card_ap", "card_lp", "card_ability"])
 
 cards=[]
 flag = True;
@@ -167,12 +167,12 @@ for card in cards:
         card_ap = ''
         card_lp = ''
     card_ability = findCardAbility(str(card))
-    new_row = {'card_pic': card_pic,"card_name":card_name,
+    new_row = {'card_pic_url': card_pic,"card_name":card_name,
                "card_id":card_id,"card_type":card_type,
                "card_rarity":card_rarity,"card_color":card_color,
                "card_group":card_group,"card_ap":card_ap,
                  "card_lp":card_lp, "card_ability":card_ability,
-                 "card_lv":card_lv}
+                 "card_lv":card_lv,'card_pic':''}
     df = df._append(new_row, ignore_index=True)
 
 driver.quit()
