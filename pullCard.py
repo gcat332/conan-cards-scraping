@@ -177,4 +177,4 @@ for card in cards:
 
 driver.quit()
 df.to_excel("conan_cards.xlsx", index=False)
-print('completed')
+print('✅ completed')
