@@ -1,3 +1,6 @@
+pullCard.py : Use for scraping card data from website
+conImg.py : Use for download image from url and insert into excel workbook
+
 **This project is developed for learing on Python**
 - re : regex for capture pattern of string/html
 - serenium : web driver automation
